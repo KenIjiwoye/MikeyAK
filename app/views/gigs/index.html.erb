@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+  <!-- hero section -->
+  <div id="hero-about">
+    <div class="hero-content">
+      <h1>Upcoming Shows</h1>
+    </div>
+  </div>
+  <!-- hero section end -->
+
+
+<div id="show-works">
+  <div class="container">
+    <div class="row">
+    <% @gigs.each do |gig| %>
+      <div class="col-md-4">
+        <%= image_tag 'the-show.JPG', class: "img-responsive" %>
+        <p><%= gig.title %> <br> <%= gig.venue %> <br> <%= gig.date %></p>
+        <%= link_to 'Show', gig %> <br>
+        <%= link_to 'Edit', edit_gig_path(gig) %> <br>
+        <%= link_to 'Destroy', gig, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div>
+    <% end %>
+    </div>
+    <%= link_to 'New Gig', new_gig_path %>
+  </div>
+</div>
+
+

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @gig.title %>
+</p>
+
+<p>
+  <strong>Venue:</strong>
+  <%= @gig.venue %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @gig.date %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @gig.image %>
+</p>
+
+<%= link_to 'Edit', edit_gig_path(@gig) %> |
+<%= link_to 'Back', gigs_path %>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :gigs
   root 'pages#index'
 
   get '/about' => 'pages#about'
