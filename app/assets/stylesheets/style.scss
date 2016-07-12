@@ -1,0 +1,174 @@
+$bluecolor: #344357;
+$blueOverlay: rgba(52,67,87,0.7);
+@mixin bg-size {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+.navbar-default {
+	background-color: $bluecolor;
+	border: none;
+
+	.navbar-brand {
+		color: white;
+	}
+	.navbar-nav {
+		li a {
+			color: white;
+			text-align: center;
+			&:hover {
+				background-color: white;
+				color: $bluecolor;
+			}
+			&:active {
+				background-color: white;
+				color: $bluecolor;
+			}
+		}
+	}
+	button {
+		color: white;
+		border-radius: 0;
+		border: none;
+	}
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+	background-color: white;
+	color: $bluecolor;
+}
+.btn-default {
+	font-weight: semi-bold;
+	background-color: $bluecolor;
+	color: white;
+}
+
+h1,h2,p {
+  font-family: "reklame-script",sans-serif;
+  }
+
+h1 {
+	font-size: 6rem;
+}
+
+p {
+	font-size: 2.5rem;
+	color: #565656;
+}
+
+#hero {
+	video {
+		margin-top: -60px;
+		padding: 0;
+		position: absolute;
+		width: 100%;
+		min-height: 400px;
+		z-index: 0;
+		display: block;
+	}
+	background: url(hero-bg.JPG) top center no-repeat;
+	@include bg-size;
+	.bg-image {
+		position: absolute;
+		Z-index: -1;
+
+	}
+	.hero-content {
+		background-color: $blueOverlay;
+		position: relative;
+		z-index: 1;
+		text-align: center;
+		color: white;
+		padding: 5% 0;
+		.hero-logo {
+			min-height: auto;
+			max-width: 20%;
+			margin-bottom: 0;
+			padding-top: 12%;
+			-moz-animation-duration: 3s; 
+			-webkit-animation-duration: 3s; 
+			-o-animation-duration: 3s; 
+		}
+		h1 {
+			margin: 0;
+		}
+	}
+	
+}
+
+#works {
+	z-index: 2;
+	position: relative;
+	background-color: white;
+	padding: 5% 0;
+	text-align: center;
+	h2 {
+		font-size: 4.5rem;
+	}
+	p {
+		text-align: left;
+		padding: 5%;
+	}
+}
+
+#cta-content {
+	background: url(show-bg.jpg) center center repeat;
+	margin: 0;
+	@include bg-size;
+	z-index: 3;
+	.text-side {
+		color: white;
+		text-align: center;
+		padding: 8% 0;
+		.btn-default {
+			background-color: transparent;
+			border-radius: 0;
+			&:hover {
+				color: white;
+				background-color: $blueOverlay;
+			}
+		}
+	}
+	.row {
+		background-color: $blueOverlay;
+	}
+	.oneside-img {
+		background: url(the-show.JPG) center center no-repeat;
+		@include bg-size;
+		min-height: 400px;
+		padding: 0;
+	}
+	.oneside-vid {
+		background: url(the-vid.JPG) center center no-repeat;
+		@include bg-size;
+		min-height: 400px;
+		padding: 0;
+	}
+	.oneside-music {
+		background: url(the-music.JPG) top center no-repeat;
+		@include bg-size;
+		min-height: 400px;
+		padding: 0;
+	}
+}
+
+footer {
+	padding: 10px 0;
+	text-align: center;
+	background-color: $bluecolor;
+	p {
+		color: white;
+		font-size: 1.75rem;
+	}
+	#footer-text {
+		padding: 0;
+		.col-sm-4 {
+			padding: 0;
+		}
+	}
+}

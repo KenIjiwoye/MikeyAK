@@ -1,0 +1,54 @@
+$bluecolor: #344357;
+$blueOverlay: rgba(52,67,87,0.7);
+@mixin bg-size {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#hero-show {
+	background: url(the-show.JPG) center center no-repeat;
+	@include bg-size;
+	.hero-content {
+		padding: 10%;
+		color: white;
+		text-align: center;
+		background-color: $blueOverlay;
+	}
+}
+#hero-about {
+	background: url(bio-bg.jpg) top center no-repeat;
+	@include bg-size;
+	.hero-content {
+		padding: 10%;
+		color: white;
+		text-align: center;
+		background-color: $blueOverlay;
+	}
+}
+#hero-contact {
+	background: url(contact-bg.JPG) top center no-repeat;
+	@include bg-size;
+	.hero-content {
+		padding: 20% 10%;
+		color: white;
+		text-align: center;
+		background-color: $blueOverlay;
+	}
+}
+
+#show-works {
+	padding: 5% 0;
+	img {
+		width: 100%;
+	}
+	.container {
+		text-align: center;
+	}
+}
+
+#contact-fonts {
+	font-size: 5rem;
+	padding: 15% 0;
+}
