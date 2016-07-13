@@ -11,17 +11,19 @@
 
 <div id="show-works">
   <div class="container">
+  <% @gigs.each_slice(3) do |gigs| %>
     <div class="row">
-    <% @gigs.each do |gig| %>
-      <div class="col-md-4">
-        <%= image_tag 'the-show.JPG', class: "img-responsive" %>
+    <% gigs.each do |gig| %>
+      <div class="col-md-4" style="padding-bottom: 10%;">
+        <%= image_tag gig.image.url %>
         <p><%= gig.title %> <br> <%= gig.venue %> <br> <%= gig.date %></p>
         <%= link_to 'Show', gig %> <br>
         <%= link_to 'Edit', edit_gig_path(gig) %> <br>
         <%= link_to 'Destroy', gig, method: :delete, data: { confirm: 'Are you sure?' } %>
-      </div>
+      </div> 
     <% end %>
     </div>
+    <% end %>
     <%= link_to 'New Gig', new_gig_path %>
   </div>
 </div>
