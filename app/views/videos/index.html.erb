@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+  <!-- hero section -->
+  <div id="hero-about">
+    <div class="hero-content">
+      <h1>Latest Videos</h1>
+    </div>
+  </div>
+  <!-- hero section end -->
+
+
+<div id="show-works">
+  <div class="container">
+  <% @videos.each_slice(2) do |videos| %>
+    <div class="row">
+    <% videos.each do |video| %>
+      <div class="col-md-6" style="padding-bottom: 2%;">
+        <%= raw(youtube_embed(video.yt_url)) %> <br>
+        <%= link_to 'Show', video %> <br>
+        <%= link_to 'Edit', edit_video_path(video) %> <br>
+        <%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </div> 
+    <% end %>
+    </div>
+    <% end %>
+    <%= link_to 'New Video', new_video_path %>
+  </div>
+</div>
+
