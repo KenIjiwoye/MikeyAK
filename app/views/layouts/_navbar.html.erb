@@ -10,6 +10,11 @@
         </div>
 
         <div class="collapse navbar-collapse" id="toggleNav">
+        <% if user_signed_in? %>
+          <ul class="nav navbar-nav">
+            <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete, data: {confirm: "Are you sure?"} %></li>
+          </ul>
+        <% end %>
           <ul class="nav navbar-nav navbar-right">
             <li><a href="/">Home</a></li>
             <li><a href="/gigs">Shows</a></li>

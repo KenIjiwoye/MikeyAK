@@ -16,14 +16,18 @@
     <% videos.each do |video| %>
       <div class="col-md-6" style="padding-bottom: 2%;">
         <%= raw(youtube_embed(video.yt_url)) %> <br>
+        <% if user_signed_in? %>
         <%= link_to 'Show', video %> <br>
         <%= link_to 'Edit', edit_video_path(video) %> <br>
         <%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %>
+        <% end %>
       </div> 
     <% end %>
     </div>
     <% end %>
+    <% if user_signed_in? %>
     <%= link_to 'New Video', new_video_path %>
+    <% end %>
   </div>
 </div>
 
