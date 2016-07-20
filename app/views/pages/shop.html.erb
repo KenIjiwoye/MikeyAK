@@ -30,18 +30,9 @@
            <p>Cloud Life Tee - Black <br> $24.99</p>
            <hr>
          </div>
-         <div class="container">
+         <div class="container" id="payment">
           <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
-            <input type="hidden" name="cmd" value="_cart">
-            <input type="hidden" name="business" value="cloudlifeentertainmentllc@gmail.com">
-            <input type="hidden" name="lc" value="US">
-            <input type="hidden" name="item_name" value="Cloud Life Tee">
-            <input type="hidden" name="button_subtype" value="products">
-            <input type="hidden" name="no_note" value="0">
-            <input type="hidden" name="currency_code" value="USD">
-            <input type="hidden" name="add" value="1">
-            <input type="hidden" name="bn" value="PP-ShopCartBF::NonHostedGuest">
-            <div class="container" id="payment">
+            <input type="hidden" name="cmd" value="_s-xclick">
             <table>
             <tr><td><input type="hidden" name="on0" value="Colors">Colors</td></tr><tr><td><select name="os0">
               <option value="Gray">Gray $24.99 USD</option>
@@ -50,27 +41,21 @@
               <option value="Black">Black $24.99 USD</option>
             </select> </td></tr>
             <tr><td><input type="hidden" name="on1" value="Sizes">Sizes</td></tr><tr><td><select name="os1">
+              <option value="xs-(black shirt only)">xs-(black shirt only) </option>
               <option value="S">S </option>
               <option value="M">M </option>
               <option value="L">L </option>
               <option value="XL">XL </option>
-              <option value="XXL">XXL </option>
             </select> </td></tr>
             </table>
-           
             <input type="hidden" name="currency_code" value="USD">
-            <input type="hidden" name="option_select0" value="Gray">
-            <input type="hidden" name="option_amount0" value="24.99">
-            <input type="hidden" name="option_select1" value="Red">
-            <input type="hidden" name="option_amount1" value="24.99">
-            <input type="hidden" name="option_select2" value="Blue">
-            <input type="hidden" name="option_amount2" value="24.99">
-            <input type="hidden" name="option_select3" value="Black">
-            <input type="hidden" name="option_amount3" value="24.99">
-            <input type="hidden" name="option_index" value="0">
+            <input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+            ">
             <input class="center-block" type="image" src="assets/order_button.png" width="200px" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
             <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
           </form>
+
+
           </div>
 
          </div>        
