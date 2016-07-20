@@ -13,22 +13,66 @@
         <div class="col-md-3" style="padding-bottom: 10%;">
          <img src="assets/FullSizeRender.jpg" class="img-responsive" alt="">
          <p>Cloud Life Tee - Gray <br> $24.99</p>
-         <a class="btn btn-default" href="#">Buy Now</a> <hr>
+         <hr>
         </div>
         <div class="col-md-3 style="padding-bottom: 10%;"">
          <img src="assets/FullSizeRender_1.jpg" class="img-responsive" alt="">
          <p>Cloud Life Tee - Red <br> $24.99</p>
-         <a class="btn btn-default" href="#">Buy Now</a> <hr>
+         <hr>
         </div>
          <div class="col-md-3 style="padding-bottom: 10%;"">
            <img src="assets/FullSizeRender_2.jpg" class="img-responsive" alt="">
            <p>Cloud Life Tee - Blue <br> $24.99</p>
-           <a class="btn btn-default" href="#">Buy Now</a> <hr>
+           <hr>
          </div>
          <div class="col-md-3 style="padding-bottom: 10%;"">
            <img src="assets/FullSizeRender_3.jpg" class="img-responsive" alt="">
            <p>Cloud Life Tee - Black <br> $24.99</p>
-           <a class="btn btn-default" href="#">Buy Now</a> <hr>
+           <hr>
+         </div>
+         <div class="container">
+          <form target="paypal" action="https://www.paypal.com/cgi-bin/webscr" method="post" >
+            <input type="hidden" name="cmd" value="_cart">
+            <input type="hidden" name="business" value="cloudlifeentertainmentllc@gmail.com">
+            <input type="hidden" name="lc" value="US">
+            <input type="hidden" name="item_name" value="Cloud Life Tee">
+            <input type="hidden" name="button_subtype" value="products">
+            <input type="hidden" name="no_note" value="0">
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="add" value="1">
+            <input type="hidden" name="bn" value="PP-ShopCartBF::NonHostedGuest">
+            <div class="container" id="payment">
+            <table>
+            <tr><td><input type="hidden" name="on0" value="Colors">Colors</td></tr><tr><td><select name="os0">
+              <option value="Gray">Gray $24.99 USD</option>
+              <option value="Red">Red $24.99 USD</option>
+              <option value="Blue">Blue $24.99 USD</option>
+              <option value="Black">Black $24.99 USD</option>
+            </select> </td></tr>
+            <tr><td><input type="hidden" name="on1" value="Sizes">Sizes</td></tr><tr><td><select name="os1">
+              <option value="S">S </option>
+              <option value="M">M </option>
+              <option value="L">L </option>
+              <option value="XL">XL </option>
+              <option value="XXL">XXL </option>
+            </select> </td></tr>
+            </table>
+           
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="option_select0" value="Gray">
+            <input type="hidden" name="option_amount0" value="24.99">
+            <input type="hidden" name="option_select1" value="Red">
+            <input type="hidden" name="option_amount1" value="24.99">
+            <input type="hidden" name="option_select2" value="Blue">
+            <input type="hidden" name="option_amount2" value="24.99">
+            <input type="hidden" name="option_select3" value="Black">
+            <input type="hidden" name="option_amount3" value="24.99">
+            <input type="hidden" name="option_index" value="0">
+            <input class="center-block" type="image" src="assets/order_button.png" width="200px" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+            <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+          </form>
+          </div>
+
          </div>        
       </div>
     </div>

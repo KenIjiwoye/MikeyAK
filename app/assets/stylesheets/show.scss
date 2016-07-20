@@ -51,4 +51,15 @@ $blueOverlay: rgba(52,67,87,0.7);
 #contact-fonts {
 	font-size: 5rem;
 	padding: 15% 0;
+	a {
+		color: white;
+		font-size: 5rem;
+	}
+}
+
+#payment {
+	display: inline-block;
+	table {
+		display: inline-block;
+	}
 }
