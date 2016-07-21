@@ -1,3 +1,19 @@
 == README
 
 Artist Website with custom CMS and Web Push notifications. **IN PROGRESS**
+
+ www.MikeyAK.com (deployed on Heroku) | github: https://github.com/KenIjiwoye/MikeyAK
+
+This client & friend came to me in need of getting a website up and running before his performance at a local festival near D.C.
+I only had 3.5 days to design and complete the project to the client's given specs:
+1. ability to add/delete show flyers.
+2. ability to add/delete videos
+3.ability to incorporate merchandise for his fans to purchase. simple paypal integration.
+4. ability to integrate his soundcloud profile for fans to listen to his music.
+
+He did not an overly complicated CMS for fear of screwing something up, but still wanted to update the content himself. 
+
+##TODO##
+
+Add web push notifications
+Add video background to home page.
